@@ -39,6 +39,8 @@ RUN apt-get update \
     libcurl4 \
     libssl3 \
     libxml2 \
+    build-essential \
+    libcurl4-openssl-dev libssl-dev libxml2-dev \
  && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /usr/local/lib/R/site-library /usr/local/lib/R/site-library
