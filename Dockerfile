@@ -35,7 +35,7 @@ FROM python:3.13-slim-bookworm
 # Install R runtime & common system libs needed by rpy2 and R packages
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-    r-base \
+    r-base r-base-dev \
     libcurl4 \
     libssl3 \
     libxml2 \
